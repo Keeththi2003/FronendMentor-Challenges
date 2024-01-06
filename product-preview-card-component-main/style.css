@@ -1,0 +1,141 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Cream);
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: flex;
+    width: 600px;
+    border-radius: 10px;
+    background-color: var(--White);
+}
+
+.content-1 {
+    flex: 50%;
+
+}
+
+.content-1 .desktop {
+    width: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.content-1 .mobile {
+    display: none;
+}
+
+.content-2 {
+    flex: 50%;
+    padding: 30px;
+}
+
+.content-2>:nth-child(1) {
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--Darkgrayishblue);
+}
+
+.content-2>h1 {
+    font-family: 'Fraunces', serif;
+    margin-top: 20px;
+    line-height: 1;
+}
+
+.content-2>:nth-child(3) {
+    color: var(--Darkgrayishblue);
+    margin-top: 25px;
+    line-height: 1.5;
+    font-size: 14px;
+
+}
+
+.content-2>.price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--Darkgrayishblue);
+    margin-top: 25px;
+
+}
+
+.price>:nth-child(1) {
+    color: var(--Darkcyan);
+    font-family: 'Fraunces', serif;
+}
+
+.price>:nth-child(2) {
+    font-size: 14px;
+    text-decoration: line-through;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: none;
+    background-color: var(--Darkcyan);
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    margin-top: 25px;
+    color: var(--White);
+}
+
+button:hover {
+    background-color: var(--Verydarblue);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:375px) {
+    body {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .content-1 .desktop {
+        display: none;
+    }
+
+    .content-1 .mobile {
+        display: block;
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+    }
+
+}

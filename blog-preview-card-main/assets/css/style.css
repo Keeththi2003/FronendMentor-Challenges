@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --Yellow: hsl(47, 88%, 63%);
+}
+
+body {
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.4;
+
+}
+
+.container {
+    background-color: var(--White);
+    width: 350px;
+    border: 1px black solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 0px var(--Black);
+    padding-bottom: 20px;
+    margin-top: 70px;
+
+}
+
+.container>img {
+    width: 100%;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
+.tag {
+    display: inline;
+    background-color: var(--Yellow);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.p1 {
+    margin-top: 15px;
+    margin-left: 20px;
+
+}
+
+h2 {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+h2:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+
+}
+
+.p2 {
+    color: var(--Grey);
+    margin-top: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.profile>img {
+    width: 40px;
+}
+
+.profile>p {
+    font-weight: 800;
+    margin-left: 20px;
+}
+
+.attribution {
+    position: absolute;
+    font-size: 11px;
+    text-align: center;
+    bottom: 0;
+    margin-top: 15px;
+    margin: 5px;
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+

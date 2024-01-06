@@ -1,4 +1,4 @@
-html {
+* {
     padding: 0;
     margin: 0;
     font-family: 'Outfit', sans-serif;
@@ -8,6 +8,10 @@ html {
 body {
     background-color: hsl(212, 45%, 89%);
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -15,7 +19,7 @@ body {
     width: 250px;
     border-radius: 15px;
     padding: 15px;
-    margin: 100px auto;
+    margin-top: 80px;
 
 }
 
@@ -39,8 +43,11 @@ p {
 }
 
 .attribution {
+    position: absolute;
     font-size: 11px;
     text-align: center;
+    bottom: 0;
+    margin: 5px;
 }
 
 .attribution a {
