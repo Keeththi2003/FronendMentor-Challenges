@@ -24,8 +24,11 @@
 body {
     font-family: 'Hanken Grotesk', sans-serif;
     background-color: var(--White);
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -33,9 +36,9 @@ body {
     background-color: var(--White);
     width: 500px;
     border-radius: 20px;
-    margin: 100px auto;
+    margin: auto ;
     display: flex;
-    box-shadow: 15px 15px 20px var(--Paleblue) ;
+    box-shadow: 15px 15px 20px var(--Paleblue);
 
 }
 
@@ -169,17 +172,19 @@ button {
     background-color: var(--Darkgrayblue);
     color: var(--White);
 }
-button:hover{
-    background-image:  linear-gradient(to top, var(--Lightroyalblue), var(--Lightslateblue));
+
+button:hover {
+    background-image: linear-gradient(to top, var(--Lightroyalblue), var(--Lightslateblue));
     cursor: pointer;
 }
+
 .attribution {
-  font-size: 11px;
-  text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+    color: hsl(228, 45%, 44%);
 }
 
 @media screen and (max-width: 375px) {
@@ -189,14 +194,14 @@ button:hover{
         margin: auto;
         display: flex;
         flex-direction: column;
-        box-shadow: 15px 15px 20px var(--Paleblue) ;
-}
+        box-shadow: 15px 15px 20px var(--Paleblue);
+    }
 
-.box1{
-    border-radius: 0 0 20px 20px;
-}
+    .box1 {
+        border-radius: 0 0 20px 20px;
+    }
 
-.box2{
-    width:  100%;
-}
+    .box2 {
+        width: 100%;
+    }
 }

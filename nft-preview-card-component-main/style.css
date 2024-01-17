@@ -1,0 +1,137 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --darkblue-main-BG: hsl(217, 54%, 11%);
+    --darkblue-card-BG: hsl(216, 50%, 16%);
+    --darkblue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Softblue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--darkblue-main-BG);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--darkblue-card-BG);
+    margin: auto;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 20px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container>.image-content {
+    position: relative;
+}
+
+.container>.image-content>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.container>.image-content::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background:hsla(178, 100%, 50%, 0.5) url("images/icon-view.svg") no-repeat center;
+    cursor: pointer;
+}
+.image-content::before{
+    opacity: 0;
+}
+
+
+.container>.image-content:hover::before {
+    opacity: 1;
+}
+
+
+.container>h3 {
+    color: var(--White);
+    margin-top: 15px;
+}
+
+.container>h3:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.container>p {
+    color: var(--Softblue);
+    margin-top: 10px;
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.details>span {
+    font-weight: 600;
+    color: var(--Cyan);
+    margin-left: 5px;
+    margin-right: auto;
+    font-size: 14px;
+}
+
+.details>p {
+    font-weight: 400;
+    color: var(--Softblue);
+    margin-left: 5px;
+}
+
+hr {
+    margin-top: 15px;
+    border: 1px solid var(--darkblue-line);
+
+}
+
+.author {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+
+
+.author>img {
+    width: 30px;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.author>p>span {
+    color: var(--White);
+
+}
+
+.author>p {
+    color: var(--Softblue);
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.author>p>span:hover {
+    color: var(--Cyan);
+    cursor: pointer;
+}

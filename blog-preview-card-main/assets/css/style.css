@@ -15,6 +15,7 @@
 
 body {
     background-color: var(--Yellow);
+   height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,8 +31,7 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 0px var(--Black);
     padding-bottom: 20px;
-    margin-top: 70px;
-
+   margin: auto;
 }
 
 .container>img {
@@ -92,12 +92,8 @@ h2:hover {
 }
 
 .attribution {
-    position: absolute;
     font-size: 11px;
     text-align: center;
-    bottom: 0;
-    margin-top: 15px;
-    margin: 5px;
 
 }
 

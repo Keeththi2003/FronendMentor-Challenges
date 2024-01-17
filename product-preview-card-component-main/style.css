@@ -16,18 +16,21 @@
 
 body {
     background-color: var(--Cream);
-    display: flex;
     height: 100vh;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
+    
 .container {
     display: flex;
     width: 600px;
     border-radius: 10px;
     background-color: var(--White);
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .content-1 {
@@ -105,12 +108,13 @@ button {
 
 button:hover {
     background-color: var(--Verydarblue);
+    cursor: pointer;
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin: 20px;
+   
 }
 
 .attribution a {
