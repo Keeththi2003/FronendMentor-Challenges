@@ -15,15 +15,13 @@
 
 body {
     background-color: var(--Yellow);
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 100vh;
     line-height: 1.4;
-
 }
-
 .container {
     background-color: var(--White);
     width: 350px;
