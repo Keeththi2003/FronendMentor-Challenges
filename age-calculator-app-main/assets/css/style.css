@@ -95,6 +95,7 @@ p.error {
     color: var(--Light-red);
     font-style: italic;
     margin: 5px 0;
+    text-transform: none;
 }
 
 hr {
