@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      position: absolute;
+      font-size: 11px;
+      text-align: center;
+      bottom: 5px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="score-board">
+    <img class="logo" src="images/logo.svg" alt="">
+    <div class="score-box">
+      <p class="score-label">Score</p>
+      <p class="score">12</p>
+    </div>
+  </div>
+
+  <div class="game-wrapper">
+    <button class="paper-Btn"></button>
+    <button class="rock-Btn"></button>
+    <button class="scissor-Btn"></button>
+  </div>
+
+  <div class="results-wrapper">
+    <p class="result-label result-label-player">You Picked</p>
+    <div class="player-selection"></div>
+    <div class="result-box">
+      <p class="result"></p>
+      <button class="play-again-Btn">Play again</button>
+    </div>
+    <p class="result-label result-label-house">The House Picked</p>
+    <div class="house-selection"></div>
+  </div>
+
+  <button class="rulesBtn">Rules</button>
+
+  <div class="rules-modal">
+    <p class="rules-label">Rules</p>
+    <img src="images/icon-close.svg" alt="" class="rules-modal-close">
+    <img src="images/image-rules.svg" alt="" class="rules-modal-content">
+  </div>
 
 
-  
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
